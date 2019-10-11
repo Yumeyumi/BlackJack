@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
         reset = findViewById(R.id.button_reset)
         imagen1 = findViewById(R.id.image_player1)
         imagen2 = findViewById(R.id.image_player2)
-
+        imagen1.setImageResource(R.drawable.dado0)
+        imagen2.setImageResource(R.drawable.dado0)
         fin1.setOnClickListener {
             buttonPlayer1.isEnabled = false
             fin1.isEnabled = false
@@ -171,6 +172,8 @@ class MainActivity : AppCompatActivity() {
         plato1 = false
         plato2 = false
         winner.text = ""
+        imagen1.setImageResource(R.drawable.dado0)
+        imagen2.setImageResource(R.drawable.dado0)
     }
 
 
