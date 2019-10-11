@@ -108,7 +108,10 @@ class MainActivity : AppCompatActivity() {
                     winner.text = "El jugador 1 ha ganado"
 
                 }
-
+                plato2 = true
+                plato1 = true
+                buttonPlayer1.isEnabled = false
+                fin1.isEnabled = false
             }
             pointPlayer1.text = number1.toString()
             if (!plato2) {
@@ -141,7 +144,10 @@ class MainActivity : AppCompatActivity() {
                     winner.text = "El jugador 2 ha ganado"
 
                 }
-
+                plato2 = true
+                plato1 = true
+                buttonPlayer2.isEnabled = false
+                fin2.isEnabled = false
             }
             pointPlayer2.text = number2.toString()
             if (!plato1) {
